@@ -1,0 +1,2185 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="HTML," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="HTML学习笔记 HTMLHTML 是用来描述网页的一种语言  HTML 指的是超文本标记语言 (Hyper Text Markup Language) HTML 不是一种编程语言，而是一种标记语言 (markup language) 标记语言是一套标记标签 (markup tag) HTML 使用标记标签来描述网页   HTML头部内容 文档（类型）声明   文档类型声明：告知浏览器的解析器用什">
+<meta name="keywords" content="HTML">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HtmlBase">
+<meta property="og:url" content="http://yoursite.com/2017/04/26/HtmlBase/index.html">
+<meta property="og:site_name" content="起今知行 | 思考者">
+<meta property="og:description" content="HTML学习笔记 HTMLHTML 是用来描述网页的一种语言  HTML 指的是超文本标记语言 (Hyper Text Markup Language) HTML 不是一种编程语言，而是一种标记语言 (markup language) 标记语言是一套标记标签 (markup tag) HTML 使用标记标签来描述网页   HTML头部内容 文档（类型）声明   文档类型声明：告知浏览器的解析器用什">
+<meta property="og:image" content="en-resource://database/1482:0">
+<meta property="og:updated_time" content="2017-04-26T11:58:44.734Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HtmlBase">
+<meta name="twitter:description" content="HTML学习笔记 HTMLHTML 是用来描述网页的一种语言  HTML 指的是超文本标记语言 (Hyper Text Markup Language) HTML 不是一种编程语言，而是一种标记语言 (markup language) 标记语言是一套标记标签 (markup tag) HTML 使用标记标签来描述网页   HTML头部内容 文档（类型）声明   文档类型声明：告知浏览器的解析器用什">
+<meta name="twitter:image" content="en-resource://database/1482:0">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/04/26/HtmlBase/"/>
+
+
+
+
+
+  <title>HtmlBase | 起今知行 | 思考者</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">起今知行 | 思考者</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">自我管理，知识管理，时间管理，阅读，语音写作，思维导图，Wiz，TimeMeter</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/26/HtmlBase/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wang Jun">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://omlbexgty.bkt.clouddn.com/1-l9rwwtUMoiRJOb7uGEkhFg.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="起今知行 | 思考者">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                HtmlBase
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-26T19:42:59+08:00">
+                2017-04-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/HTML知识整理/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML知识整理</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="HTML学习笔记"><a href="#HTML学习笔记" class="headerlink" title="HTML学习笔记"></a>HTML学习笔记</h2><hr>
+<h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><p>HTML 是用来描述网页的一种语言</p>
+<ul>
+<li>HTML 指的是超文本标记语言 (Hyper Text Markup Language)</li>
+<li>HTML 不是一种编程语言，而是一种标记语言 (markup language)</li>
+<li>标记语言是一套标记标签 (markup tag)</li>
+<li>HTML 使用标记标签来描述网页</li>
+</ul>
+<hr>
+<h4 id="HTML头部内容"><a href="#HTML头部内容" class="headerlink" title="HTML头部内容"></a>HTML头部内容</h4><ul>
+<li><p><strong>文档（类型）声明</strong></p>
+</li>
+<li><ul>
+<li>文档类型声明：告知浏览器的解析器用什么文档标准解析这个文档 ：&lt;!doctype html&gt;代表的是 HTML 5 标准，不是标签HTML5</li>
+<li>目的： 对文档进行有效性验证。决定浏览器的呈现模式（严格模式是指浏览器按照最高标准来解析文档； 混杂模式则是使用比较宽松的向后兼容的方式显示。）</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>语言类型声明</strong></p>
+</li>
+<li><ul>
+<li><html lang="en"> en—-&gt;English</html></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>head标签</strong></p>
+</li>
+<li><ul>
+<li>head元素是所有头部元素的容器。head内的元素可包含脚本，指示浏览器在何处可以找到样式表，提供元信息，等等。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><p><strong>title标签</strong></p>
+</li>
+<li><ul>
+<li><strong>定义:</strong>浏览器工具栏中的标题</li>
+<li>提供页面被添加到收藏夹时显示的标题，显示在搜索引擎结果中的页面标题</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><p><strong>meta标签</strong></p>
+</li>
+<li><ul>
+<li><p><strong>定义:</strong>META标签是HTML语言HEAD区的一个辅助性标签</p>
+</li>
+<li><p><strong>作用:</strong>META标签用来描述一个HTML网页文档的属性，例如作者、日期和时间、网页描述、关键词、页面刷新等。它提供的信息虽然用户不可见，但却是文档的最基本的<strong>元数据</strong></p>
+</li>
+<li><ul>
+<li><strong>元数据：</strong> 用来概括描述数据的一些基本数据。也就是描述数据的数据。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><ul>
+<li><a href="http://zq210wl.github.io/2015/01/05/html-meta-tag/" target="_blank" rel="external">http://zq210wl.github.io/2015/01/05/html-meta-tag/</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><p><strong>嵌套：</strong></p>
+</li>
+<li><ul>
+<li>html 父元素 head / body 子元素</li>
+<li>父子关系 兄弟关系    父子关系要ctrl+] 兄弟关系要处于同一列</li>
+<li>位移快捷键：ctrl + [，ctrl + ]</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 文档头（类型）声明 --&gt;</div><div class="line"></div><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line"></div><div class="line">&lt;!--文档类型是 HTML 5 注意：不是标签 --&gt;</div><div class="line"></div><div class="line">&lt;!-- 根元素 --&gt;</div><div class="line"></div><div class="line">&lt;html&gt;</div><div class="line"></div><div class="line">     &lt;!-- 头部 --&gt;</div><div class="line"></div><div class="line">     &lt;head&gt;</div><div class="line"></div><div class="line">&lt;!--head 内部包含的内容绝大部分是不可见的，   主要是用来辅助页面的功能--&gt;</div><div class="line"></div><div class="line">           &lt;!--        title ： 定义页面的标题    --&gt;</div><div class="line"></div><div class="line">           &lt;title&gt;标题&lt;/title&gt;</div><div class="line"></div><div class="line">&lt;!--meta : 定义页面的元数据 属性 ：charset   针对搜索引擎和解析格式的属性  --&gt;</div><div class="line"></div><div class="line">           &lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line"></div><div class="line">     &lt;/head&gt;</div><div class="line"></div><div class="line">     &lt;!-- 身体 --&gt;</div><div class="line"></div><div class="line">     &lt;body&gt;</div><div class="line"></div><div class="line">           &lt;!--body 内部绝大部分都是可见的，主要是用来搭建 HTML 结构 --&gt;</div><div class="line"></div><div class="line">           &lt;!-- 王 --&gt;</div><div class="line"></div><div class="line">           &lt;div&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">     &lt;/body&gt;</div><div class="line"></div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<hr>
+<h3 id="CSS引入方式"><a href="#CSS引入方式" class="headerlink" title="CSS引入方式"></a>CSS引入方式</h3><ul>
+<li><p><strong>内联样式表</strong></p>
+</li>
+<li><ul>
+<li>位置： 标签内部</li>
+<li>优点： 优先级非常高</li>
+<li>缺点： 冗余代码非常多,维护非常困难</li>
+<li>使用场景： 针对个别特殊的样式进行修饰</li>
+</ul>
+</li>
+<li><p><strong>内部样式表</strong></p>
+</li>
+<li><ul>
+<li>位置： head 标签的内部 <style></style></li>
+<li>优点： 一定程度上实现代码和样式的分离 ,速度快，没有额外的服务器的请求压力</li>
+<li>缺点： 造成单个页面体积过大, 代码较乱，前后端沟通困难</li>
+<li>使用场景： 大型网站的首页</li>
+</ul>
+</li>
+<li><p><strong>外部样式表</strong></p>
+</li>
+<li><ul>
+<li>位置： head 标签的内部 <link rel="stylesheet" type="text/css" href="文件路径"></li>
+<li>优点： 复用性强，一个样式表可用于多个页面.维护方便，易于改变,代码简洁，易于分工协作</li>
+<li>缺点： 容易混淆,会有垃圾代码,会造成服务器请求压力</li>
+<li>使用场景： 公共样式的设计,大型网站的二三级页面.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>引入方式的优先级问题</strong></p>
+</li>
+<li><ul>
+<li>内联 &gt; 内部 ？外部</li>
+<li>如果优先级相同，谁后加载谁生效——如果优先级不同，谁优先级高的生效</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="CSS选择器"><a href="#CSS选择器" class="headerlink" title="CSS选择器"></a>CSS选择器</h3><ul>
+<li><p><strong>选择器优先级问题</strong></p>
+</li>
+<li><ul>
+<li>内联样式表 &gt; ID 选择器 &gt; 类选择器 &gt; 标签名选择器</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>CSS 选择器（重要）</strong></li>
+</ul>
+<ul>
+<li><ul>
+<li>标签名选择器： 标签名称 + { }</li>
+<li>类（class）选择器： . + class 名称 + { }</li>
+<li>ID 选择器： # + ID名称 + { }</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li>通配符选择器： 用于清除样式；*{一般用于清除样式}不推荐使用，因为通配符需要检索的是全部的标签设置这一个内容，会将所有标签更改，非常影响效率</li>
+<li>相邻兄弟选择器： 选择器1+选择器2{css样式} 紧挨着选择器1的选择器2，CSS样式作用在选择器2</li>
+<li>同级元素通用选择器： 选择器1~选择器2{css样式} 选择器2必须是选择器1后的同级选择器</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><p>属性选择器： [自定义的属性名]{ css样式}[自定义的属性名=属性值]{ css样式}</p>
+</li>
+<li><p>伪元素选择器： 伪元素选择器实际上并不存在</p>
+</li>
+<li><ul>
+<li><p>first-line:为元素中非常常用的一个内容，作用范围：为本内容的首行；</p>
+</li>
+<li><ul>
+<li>例子：诺只针对p元素生效p::first-line{css样式}</li>
+</ul>
+</li>
+<li><p>first-letter： 作用范围:本内容的首字母；</p>
+</li>
+<li><p>伪元素选择器前缀就是2个冒号但是浏览器认为选择器只有一个冒号，主要是伪类向后面兼容；</p>
+</li>
+<li><p>特点： 针对块元素生效</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><p>伪类选择器：</p>
+</li>
+<li><ul>
+<li><p>动态伪类</p>
+</li>
+<li><ul>
+<li>hover 当鼠标悬停在某一内容之上触发；</li>
+<li>link未被访问的链接</li>
+<li>visited已被访问过的链接</li>
+<li>active 鼠标点击的时候出发，按住时</li>
+<li>focus  当获取焦点是触发  如果需要给div获取焦点，可以给div设置tabindex<div tabindex="”0”"></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li>顺序：hover 需要书写在link visited之后 active 需要书写在hover之后：link visited hover active;</li>
+</ul>
+</li>
+<li><p>正常伪类</p>
+</li>
+<li><ul>
+<li><p>Before 在某一元素之前添加内容 div:before{content:”添加的内容”;</p>
+</li>
+<li><p>after 在某一元素之后添加内容 div:after{content:”添加的内容”;}</p>
+</li>
+<li><p>nth-child选择器</p>
+</li>
+<li><ul>
+<li>nth-child(2n)选择器匹配父元素中的偶数个子元素，nth-child(2n-1)选择器匹配父元素中的奇数个子元素，</li>
+<li>nth-last-child（n）   计数从最后一个开始；</li>
+<li>nth-of-type(n);匹配同类型中的第n个同级兄弟元素；</li>
+</ul>
+</li>
+<li><p>nth-of-type()</p>
+</li>
+<li><ul>
+<li>p:nth-child(2)是父元素标签内的第二个元素，其次这个元素必须是选中的p标签，否则无效</li>
+<li>nth-of-type(2)匹配同类型中的第2个同级的兄弟元素；</li>
+</ul>
+</li>
+<li><p>first-child—选择父元素的第一个孩子</p>
+</li>
+<li><p>last-child—-选择父元素的最后一个孩子</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h3><ul>
+<li><strong>盒模型划分：</strong>内容：content ；内边距： padding ；边框： border ；外边距： margin ；</li>
+</ul>
+<ul>
+<li><strong>盒模型： 内容**</strong>参数**</li>
+</ul>
+<ul>
+<li><ul>
+<li><p>基础属性：width：height</p>
+</li>
+<li><p>background-color 背景颜色  颜色的写法 英文单词 透明 transparent rgb（red,green,blue） 取值范围 0 - 255 rgba（red,green,blue,alpha） alpha 取值范围 0 ~ 1 .4 -&gt; 0.4 </p>
+</li>
+<li><ul>
+<li>常用的颜色简写: #ffffff -&gt; #fff -&gt; white cccccc -&gt; #ccc -&gt; gray</li>
+</ul>
+</li>
+<li><p>background-image 设置背景图片 url(“ 图片的路径 ”)</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><p>background-repeat 背景图片的重复方式</p>
+</li>
+<li><ul>
+<li>repeat  横向纵向全平铺repeat-x横向平铺repeat-y纵向平铺no-repeat 不平铺</li>
+</ul>
+</li>
+<li><p>background-position 背景图片的定位,值得书写方式： 数值 100px 100px 百分比30%30% 英文单词(常用)top  上 right右bottom下  left左 center  居中</p>
+</li>
+<li><ul>
+<li>当只设置一个定位方向时另外一个数值默认center</li>
+</ul>
+</li>
+<li><p>background 复合写法: 1.颜色 2.图片路径 3.定位 4.重复方式 ：background:red url(“img/1.png”) bottom no-repeat;</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><p>background-attachment 设置背景图片是否随着界面滚动而滚动  属性 scroll 滚动 默认值 fixed 固定的 可能造成偏移</p>
+</li>
+<li><p>background-size 设置背景图片大小 background-size: 600px 300px;</p>
+</li>
+<li><ul>
+<li>背景尺寸—数值的填写：具体尺寸，百分比，英文—auto 默认尺寸；—cover—等比例的覆盖，直至完全覆盖，背景图片可能超出容器—contain—会将背景图片等</li>
+<li>比例缩放，宽度或者高度和父容器相等的时候停止背景图片不会超过父容器</li>
+</ul>
+</li>
+<li><p>Background-clip ；指定背景的绘制区域，将背景图片适当裁剪</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><p>border-box：决定背景图片的剪切范围</p>
+</li>
+<li><ul>
+<li>border+padding+content</li>
+<li>padding-box—-padding+content</li>
+<li>content-box—–content</li>
+</ul>
+</li>
+<li><p>background-origin：决定背景图片的填充的初始位置</p>
+</li>
+<li><ul>
+<li>border-box—–以border作为起始位置</li>
+<li>padding-box—以padding作为起始位置</li>
+<li>content-box—-以content作为起始位置</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>盒模型： 边框参数</strong></p>
+</li>
+<li><ul>
+<li><p>border-style：边框常用的样式 solid 实线: 四个方向  top  right  bottom  left</p>
+</li>
+<li><ul>
+<li>dashed（虚线—在大多数浏览器里面为实线）dotted（点线—在大多数浏览器里面为实线）  solid （实线）double双实线(如果为1px为实线)none无边框hidden  隐藏（效果与“none”相同–样式冲突时使用隐藏）groove  3D凹槽边框  ridge  垄状边框inset  内陷  outset  外凸</li>
+</ul>
+</li>
+<li><p>border-width:thinmedium  thick  象素（px）</p>
+</li>
+<li><p>border-style: 边框颜色取决于border-color</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><p>border-color: color边框复合写法 宽度 样式 颜色border:1px dotted blue;</p>
+</li>
+<li><p>宽度:width</p>
+</li>
+<li><ul>
+<li>border-width: 10px; /<em>上右下左</em>/</li>
+<li>border-width: 10px 20px;/<em>上下左右</em>/</li>
+<li>border-width: 10px 20px 30px;  /<em>上 左右  下</em>/</li>
+<li>border-width: 10px 20px 30px 40px; /<em>上 右  下  左</em>/</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><p>Border-radius：设置圆角边框</p>
+</li>
+<li><ul>
+<li>Border-radius:数值1,数值2,数值3,数值4/——————–前四个横向距离:数值5,数值6,数值7,数值8———————后四个纵向距离</li>
+<li>数值1,数值2,数值3,数值4———————左上，右上，右下，左下</li>
+<li>数值1,数值2,数值3—————————左上，右上左下，右下</li>
+<li>数值1,数值2———————————左上右下，右上左下</li>
+<li>数值1—————————————左上右上右下左下</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>盒模型：margin和padding的特性</strong></p>
+</li>
+<li><ul>
+<li><p>padding注：两个元素是父子关系，你需调整内容的位置的时候去使用paddiing,可以填充背景图片；</p>
+</li>
+<li><p>特性:</p>
+</li>
+<li><ul>
+<li>padding 会撑大盒模型</li>
+<li>pddding 不能为负数</li>
+<li>padding 会显示背景图片</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li>背景时期填充范围 是 整个盒模型的实际范围：———content+padding+border</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><p>margin注：当两个元素是兄弟关系的时候推荐使用 margin;</p>
+</li>
+<li><p>特性：</p>
+</li>
+<li><ul>
+<li>margin 不会占我们的盒子空间，他只会影响盒子的位置</li>
+<li>margin 不会填充背景图片</li>
+<li>margin 可以设置负数</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>盒模型：盒子阴影</strong></p>
+</li>
+<li><ul>
+<li><p>E {box-shadow:inset x-offset y-offset blur-radius spread-radius color}</p>
+</li>
+<li><ul>
+<li>box-shadow:inset 0px 15px 10px -15px #000;</li>
+</ul>
+</li>
+<li><p>换句说： 对象选择器 {box-shadow:投影方式 X轴偏移量 Y轴偏移量 阴影模糊半径 阴影扩展半径 阴影颜色}著作权归作者所有。</p>
+</li>
+<li><ul>
+<li>投影方式： 唯一值“inset”</li>
+<li>X轴偏移量 Y轴偏移量：偏移量可为负</li>
+<li>阴影模糊半径：此参数是可选，，但其值只能是为正值，如果其值为0时，表示阴影不具有模糊效果，其值越大阴影的边缘就越模糊；</li>
+<li>阴影扩展半径：此参数可选，其值可以是正负值，如果值为正，则整个阴影都延展扩大，反之值为负值是，则缩小</li>
+<li>阴影颜色：此参数可选，如果不设定任何颜色时，浏览器会取默认色，但各浏览器默认色不一样，特别是在webkit内核下的safari和chrome浏览器将无色，也就是透明，建议不要省略此参数。</li>
+</ul>
+</li>
+<li><p>多重阴影</p>
+</li>
+<li><ul>
+<li>box-shadow:0px 0px 0px 3px #bb0a0a,            0px 0px 0px 6px #2e56bf,            0px 0px 0px 9px #ea982e;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>字体阴影：</strong></p>
+</li>
+<li><ul>
+<li><p>text-shadow:10px 10px 50px black：X轴偏移量 Y轴偏移量  阴影模糊半径 阴影颜色</p>
+</li>
+<li><ul>
+<li>X轴偏移量 Y轴偏移量：偏移量可为负</li>
+<li>阴影模糊半径：此参数是可选，，但其值只能是为正值，如果其值为0时，表示阴影不具有模糊效果，其值越大阴影的边缘就越模糊；</li>
+<li>阴影颜色：此参数可选，如果不设定任何颜色时，浏览器会取默认色，但各浏览器默认色不一样，特别是在webkit内核下的safari和chrome浏览器将无色，也就是透明，建议不要省略此参数。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>盒模型问题：</strong></p>
+</li>
+<li><ul>
+<li><p>background-color: red;background: url(“img/1.jpg”) no-repeat;当我设置 background-color 之后，在下面使用 background 的时候background 的背景颜色会失效</p>
+</li>
+<li><p>background-origin失效问题：background-origin,设置背景图片初始位置；background-position；设置相对于初始位置的偏移量如果背景图片设置了background-attachment:fixed的时候background-origin:就会失效；</p>
+</li>
+<li><p>问题:边框数值的缺失 ：</p>
+</li>
+<li><ul>
+<li>border-width  : 如果缺失，可以显示属性 thin 细的边框 1px, medium 默认值 中等的边框 3px, thick 粗的边框 5px</li>
+<li>border-style  ：如果省略，无法显示</li>
+<li>border-color ：如果省略，可以显示 显示的颜色是黑色</li>
+</ul>
+</li>
+<li><p>利用padding让div居中：</p>
+</li>
+<li><ul>
+<li>让子元素居中div_1{width:100px;height:100px;background:red;padding：100px;}：父级div_2{width:100px;height:100px;background:yellow;}</li>
+<li>子级padding 可以撑大盒子的空间 四个方向 top right bottom left padding 不能为负数！</li>
+</ul>
+</li>
+<li><p>问题：当两个元素是兄弟是关系的时候：第一个元素的 margin-bottom 和第二个元素的 margin-top 会产生叠压（两者取最大值）</p>
+</li>
+<li><p>问题：当两个元素是父子关系的时候,子级元素的第一个元素的margin-top会传递给父级</p>
+</li>
+<li><ul>
+<li><p>解决方法：</p>
+</li>
+<li><ul>
+<li>给父级元素设置 border</li>
+<li>给父级元素设置 overflow:hidden;</li>
+<li>不要使用margin，而去使用padding注意盒子空间</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="HTML标签"><a href="#HTML标签" class="headerlink" title="HTML标签"></a>HTML标签</h3><ul>
+<li><strong>块元素标签</strong></li>
+</ul>
+<ul>
+<li><ul>
+<li>div：无意义，双标签 主要用于配合界面布局</li>
+<li>address： 定义一个地址，双标签，浏览器通常会以斜体的形式显示</li>
+<li>h1-h6  ： 一级标题至六级标题 大小依次减小,h1最大，h6最小，h1只允许使用一个，h2使用十个 一下，h3随便用</li>
+<li>blockquote： 用于定义一段长的引用文本，引用文本 双标签 会在引用的内容前面自动添加一段距离 cite=”该文本引用的URL”</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><p>列表相关内容——ul/li———ol/li—–dl/dt/dd</p>
+</li>
+<li><ul>
+<li><p>ol： 有序列表，双标签 使用li作为列表项</p>
+</li>
+<li><ul>
+<li><p>ol内部属性type</p>
+</li>
+<li><ul>
+<li><p>罗马数字： 1：小写英文： a：大写英文： A： 小写希腊字符： i： 大写希腊字符： I</p>
+</li>
+<li><p>如果需要修改列表的其实数字：</p>
+</li>
+<li><ul>
+<li>ol内部通过start属性修改</li>
+<li>在li内部设置属性value修改</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>ul： 无序列表，双标签 使用li作为列表项</p>
+</li>
+<li><p>dl 语义：定义列表</p>
+</li>
+<li><ul>
+<li>dt 语义：定义标题列表项，只能报站文本，图像，超链接表单控件</li>
+<li>dd 语义：定义普通列表项，针对dt的解释和说明</li>
+</ul>
+</li>
+<li><p>设置列表类型</p>
+</li>
+<li><ul>
+<li>List-style-type: disc黑色实心圆点   Circle黑色空心圆点 square黑色实心正方形   none无</li>
+<li>list-style-img:url(“”); 设置列表点的图片类型，需要使用url来引入图片</li>
+<li>List-sytle-pisition:inside—–inside：列表修饰处于列表之内——–outside:列表修饰处于列表之外（默认）</li>
+</ul>
+</li>
+<li><p>复合写法   类型——–位置——-图片：list-style:none inside url(“x.jpg”);</p>
+</li>
+<li><p>​</p>
+</li>
+<li><p>如何清除列表默认样式—–ul,ol{margin:0;padding:0;list-style:none;}</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><!-- pre:语义：表示一大段计算机代码 -->
+</li>
+<li><ul>
+<li><pre> 要用转义字符 &lt&gt<></pre></li>
+<li>​</li>
+</ul>
+</li>
+<li><p><strong>块元素特性：</strong></p>
+</li>
+<li><ul>
+<li>块元素默认独占一行</li>
+<li>块元素如果没有设置宽度，默认会继承父级的宽度，会撑满父级的宽度</li>
+<li>块元素支持宽高</li>
+<li>可以正确显示margin和padding</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p><strong>内联元素标签</strong></p>
+</li>
+<li><ul>
+<li><p>span ： 无意义，双，针对一些比较小，需要进行特殊设置的内容去使用 , 因为span,标签可以处以同一行</p>
+</li>
+<li><p>a： 超链接,属性：href 指定超链接所关联的另一个资源herf 的填写方式</p>
+</li>
+<li><ul>
+<li><p># 特点 污染地址链接 会刷新界面</p>
+</li>
+<li><p>### 特点 污染地址链接，不会刷新界面 </p>
+</li>
+<li><p>javascript 特点 不会污染地址连接 不会刷新界面 不会实现跳转</p>
+</li>
+<li><ul>
+<li>javascript:void(0);简写形式 href=”javascript:;”</li>
+</ul>
+</li>
+<li><p>target 指定使用框架集中的哪一个框架来装载另一个资源 _self 自身 _blank 新窗口</p>
+</li>
+<li><ul>
+<li>绝对路径：当指定绝对地址的时候，href的值需要填写的URL（统一资源定位器）URL:用于对互联网上的文档或者资源进行寻址的时候使用</li>
+<li>相对路径：img/1.png</li>
+<li>物理路径：file</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>锚点&lt;h2 id=&quot;a&quot;&gt;我是标题一&lt;/h2&gt;&lt;a href=&quot;#a&quot;&gt;点击我就会跳到第一段&lt;/a&gt;</code></p>
+</li>
+<li><p>hr 语义：分割线</p>
+</li>
+<li><p>br 语义：换行</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li>文本格式化：</li>
+<li>em 语义：强调的文本 浏览器会以斜体显示</li>
+<li>strong 语义：重要的文本 浏览器会以粗体显示 语气强于em</li>
+<li><i>斜体</i></li>
+<li><small>小写</small></li>
+<li><!-- small--印刷体中的小段英文 -->
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><p>语义标签</p>
+</li>
+<li><p><!-- q:语义：定义一段短的引用文本 浏览器会将引用的文本添加双引号-->这是<q>短引用!</q></p>
+</li>
+<li><!-- cite：语义： 表示一个作品的名称，书，电影，歌曲浏览器会以斜体显示 -->
+</li>
+<li><p><cite>《HTML,从入门到改行》</cite></p>
+</li>
+<li><!-- code:定义：定义一段计算机代码 -->
+</li>
+<li><ul>
+<li><code>How old are you </code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><p><strong>内联元素特征：</strong></p>
+</li>
+<li><ul>
+<li>内联元素不会独占一行，多个内联元素会排列在同一行，直到这一行放不下才会换行</li>
+<li>内联元素不支持宽高，内联元素的实际宽高由内容撑开</li>
+<li>内联元素无法正确显示上下的margin-padding</li>
+<li>内联元素的代码进行换行会被解析</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p><strong>内联块元素标签</strong></p>
+</li>
+<li><ul>
+<li><p>img 语义:定义图片 单标签 属性,src 指定图片文件所在位置，可以为绝对路径，指定路径, alt 当图片加载失败时，可指定一段文本可作为该图片提示信息。</p>
+</li>
+<li><p>​</p>
+</li>
+<li><p>可针对SEO进行图片的解释说明</p>
+</li>
+<li><p>​</p>
+</li>
+<li><p>内联块元素标签特征：</p>
+</li>
+<li><ul>
+<li>可正常显示宽高；</li>
+<li>多个内敛块可以排列在同一行；</li>
+<li>代码换行会被解析；</li>
+<li>内联元素无法正确显示上下的margin-padding</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>垂直对齐方式：</strong>vertical-align</p>
+</li>
+<li><ul>
+<li>top 顶部 middle 居中 baseline 基线 不用基线都可处理 该问题 bottom 底部</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>标签之间的相互转换:</strong></p>
+</li>
+<li><ul>
+<li>displayblock 块inline 内联linlie-block 内联块none 无,让标签完全消失，布局的时候不会在考虑该元素</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>嵌套相关的问题：</strong></p>
+</li>
+<li><ul>
+<li>块元素内允许嵌套其他元素，p,h1-h6,dt中间不能嵌套其他块元素标签</li>
+<li>内联元素一般嵌套内联或内联块 a不能嵌a</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>问题处理</strong></p>
+</li>
+<li><ul>
+<li><p>换行会被解析问题：处理内联块元素img 下方存在间隙</p>
+</li>
+<li><ul>
+<li>给父级设置line-height为0；</li>
+<li>给父级设置 font-size为0；</li>
+<li>给图片设置display：block;</li>
+<li>给图片设置 垂直对齐方式(非基线)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="table表格属性"><a href="#table表格属性" class="headerlink" title="table表格属性"></a>table表格属性</h3><ul>
+<li><ul>
+<li><p>表格 table：双：语义：定义表格</p>
+</li>
+<li><p>内部：</p>
+</li>
+<li><ul>
+<li>tr 语义：表格中的行</li>
+<li>td 语义：表格中的单元格</li>
+<li>th 语义：表格中的页眉单元格</li>
+<li>caption 语义：表格的标题</li>
+</ul>
+</li>
+<li><p>属性</p>
+</li>
+<li><ul>
+<li><p>cellspacing 设置单元格和单元格之间的距离</p>
+</li>
+<li><p>cellpadding 设置单元格和内容之间的间距</p>
+</li>
+<li><p>border： 设置单元格的宽度 ：有默认样式</p>
+</li>
+<li><p>border-collapse</p>
+</li>
+<li><ul>
+<li>collapse ：合并边框 ：cellspacing 会失效</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>特殊标签</p>
+</li>
+<li><ul>
+<li><p>thead ：表格的头部</p>
+</li>
+<li><ul>
+<li>表格的页眉部分称之为头部</li>
+</ul>
+</li>
+<li><p>tbody ：表格的主体</p>
+</li>
+<li><ul>
+<li>表格的内部的正文称之为主体</li>
+</ul>
+</li>
+<li><p>tfoot ：表格的页脚</p>
+</li>
+<li><ul>
+<li>表格底部的统计，计算等行一般称之 ：为表格的页脚</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>单元格的合并</p>
+</li>
+<li><ul>
+<li><p>1.找到单元格合并的起始位置</p>
+</li>
+<li><p>2.确定单元格合并的方向</p>
+</li>
+<li><ul>
+<li>横向合并 colspan ：纵向合并 rowspan</li>
+</ul>
+</li>
+<li><p>3.确定需要合并几个单元格</p>
+</li>
+<li><p>4.处理理多余的单元格</p>
+</li>
+</ul>
+</li>
+<li><p>单元格宽度的计算问题 table-layout</p>
+</li>
+<li><ul>
+<li>auto 宽度根据内容去自动计算</li>
+<li>fixed ：固定的 ：需要配合表格的宽度来使用</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="form表单属性"><a href="#form表单属性" class="headerlink" title="form表单属性"></a>form表单属性</h3><ul>
+<li><ul>
+<li><p>双 ：语义：定义表单</p>
+</li>
+<li><p>属性</p>
+</li>
+<li><ul>
+<li>action：用于记录表单提交的 URL</li>
+<li>method：用于记录客户端与服务端的交互方式</li>
+</ul>
+</li>
+<li><p>input：用于向表单内部填写内容</p>
+</li>
+<li><ul>
+<li><p>name 内容名称</p>
+</li>
+<li><p>value 内容数值</p>
+</li>
+<li><p>type</p>
+</li>
+<li><ul>
+<li><p>不填写 默认是文本输入框</p>
+</li>
+<li><p>text ：文本输入框：style=”outline:none;”取消获取焦点的蓝色边框</p>
+</li>
+<li><ul>
+<li>maxlength 设置填写内容的最大长度</li>
+</ul>
+</li>
+<li><p>password ：密码输入框</p>
+</li>
+<li><ul>
+<li>maxlength 设置填写内容的最大长度</li>
+<li>浏览器会以密文的形式来显示内容</li>
+</ul>
+</li>
+<li><p>radio ：单选框</p>
+</li>
+<li><ul>
+<li><p>多个单选框的时候，他们的 name 值需要相同</p>
+</li>
+<li><p>checked 设置默认选项</p>
+</li>
+<li><p>拓展 label</p>
+</li>
+<li><ul>
+<li>可以将点击事件传递给选项</li>
+<li>是通过 for 属性来进行传递</li>
+<li>用法：需要被传递的标签上，设置 ID 名称 ：<label for="“ID名称”"></label></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li><p>checkbox ：复选框</p>
+</li>
+<li><ul>
+<li><p>name 不需要相同</p>
+</li>
+<li><p>checked 设置默认选项</p>
+</li>
+<li><p>拓展 label</p>
+</li>
+<li><ul>
+<li>可以将点击事件传递给选项</li>
+<li>是通过 for 属性来进行传递</li>
+<li>用法：需要被传递的标签上，设置 ID 名称 ：<label for="“ID名称”"></label></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>hidden：隐藏</p>
+</li>
+<li><p>file      ：上传文件</p>
+</li>
+<li><p>button：按钮</p>
+</li>
+<li><p>submit：提交按钮</p>
+</li>
+<li><p>reset   ：重置按钮</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>select：定义下拉列表</p>
+</li>
+<li><ul>
+<li>使用 option 来作为列表项</li>
+<li>属性 selected 设置默认的初始值</li>
+</ul>
+</li>
+<li><p>textarea ：定义文本输入域</p>
+</li>
+<li><ul>
+<li>通过 CSS 3 的属性 resize：none；</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p><strong>服务器与表单简介</strong></p>
+</li>
+<li><p>什么叫服务器？</p>
+</li>
+<li><ul>
+<li>能够提供服务的机器</li>
+<li>服务器又名“伺服器”，是提供计算服 务的设置。服务器需要响应服务请 求，并且还需要承担服务所提供的对 应的保障</li>
+</ul>
+</li>
+<li><p>什么是表单？</p>
+</li>
+<li><ul>
+<li>用于记录发送给服务器的请求内容； 表单在网页中主要负责数据的采集功 能 ；说白了就是获取用户提交的数据并反 馈给后台人员进行验证或者收集的标 签（form）</li>
+<li><img src="en-resource://database/1482:0" alt="img"></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="CSS样式-属性"><a href="#CSS样式-属性" class="headerlink" title="CSS样式 属性"></a>CSS样式 属性</h3><ul>
+<li>设置文字字号 font-size x-large,xx-large,x-small,xx-small, medium(默认文字大小16px文本如果不进行特殊设置默认16px,font-size是继承的属性</li>
+<li>设置文字颜色 color</li>
+<li>设置文字的修饰线 text-decoration–underline下划线–overline上划线–line-through删除线–none无—给超链接取消默认样式—————-闪烁线blink</li>
+<li>设置文字间距 letter-spacing</li>
+</ul>
+<ul>
+<li><p>设置文字首行缩进 text-indent;</p>
+</li>
+<li><ul>
+<li>px 单位是像素，相对长度单位相对于显示器屏幕分辨率而言</li>
+<li>em 也是单位名称也是相对长度单位，相对于当前对象内的文本尺寸而言</li>
+<li>rem 相对长度单位 相对于根元素的文本字体尺寸大小</li>
+</ul>
+</li>
+<li><p>设置文字的大小写转换 text-transform;uppercase 他将全部单词大写 lowercase 他将全部单词小写 capitalize 所有单词首字母大写</p>
+</li>
+<li><p>设置水平对齐方式 text-align center left right</p>
+</li>
+<li><ul>
+<li>text-align 针对的不是他本身而是针对具有内联元素特征的元素生效 （内联，内敛块）</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>设置文字行高 line-height</p>
+</li>
+<li><p>设置文字样式 font-stylenormal 正常 italic 斜体字 oblique 倾斜的文字 italic失效的时候需要使用oblique替代，平时尽量使用italic</p>
+</li>
+<li><p>设置文字加粗 font-weight normal 正常 bold 加粗 bolder 更粗</p>
+</li>
+<li><p>设置字体样式 font-family 定义 用于某个元素的字体族的名称或者类族的名称的一个优先表 浏览器会使用他可识别的第一个值,每一个值使用，</p>
+</li>
+<li><ul>
+<li>分割始终需要提供一个类族名称作为最后选择黑体 SimHei 宋体 SimSun 华文行楷 STKaiti 微软雅黑 Mircosoft YaHei</li>
+<li>最后填写一个通用字体 Helvetica</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>设置文字当中：英文：的显示方式 font-variant normal 普通 small-caps; 英文全部变成大写并且以小字号显示</p>
+</li>
+<li><p>visibility——规定元素内容是否可见    属性——-hidden会让元素隐藏，会占据空间———-visible元素显示（默认）</p>
+</li>
+<li><p>Overflow规定当内容超出conten时我们如何处理</p>
+</li>
+<li><ul>
+<li><p>Auto 超出滚动条显示，当内容超出元素区域的时候会出现滚动条（如果超出才会触发）</p>
+</li>
+<li><p>Scroll超出滚动条显示，当内容超出元素区域的时候会出现滚动条 </p>
+</li>
+<li><p>Hidden超出内容，隐藏</p>
+</li>
+<li><p>Overflow:使用的时候需要注意两个问题</p>
+</li>
+<li><ul>
+<li>不同浏览器之间显示时可能存在差异，</li>
+<li>Overflow兼容性很差，低版本内容可能不支持</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Cursor——-用于设置鼠标样式的属性</p>
+</li>
+<li><ul>
+<li>text—–文本输入–move—移动光标—-pointer——-手掌—–url()—–自定义图片；–推荐图片格式—-.cur—–图片分辨率需要在128*128之内</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h3><ul>
+<li><p>浮动——float——–left—right—–none;</p>
+</li>
+<li><p><strong>特性：</strong></p>
+</li>
+<li><ul>
+<li>会使元素脱离文档流（布局的时候不会再考虑）；</li>
+<li>提升层级半级；</li>
+<li>如果没有宽度，浮动元素的内容会去撑开宽度；</li>
+<li>浮动元速度会使不支持宽高的元素，支持宽高；</li>
+<li>浮动元素对后面与之相邻的下一个元素产生影响</li>
+</ul>
+</li>
+<li><p>浮动元素什么时候停止呢？</p>
+</li>
+<li><ul>
+<li>遇到父级的边框的时候</li>
+<li>遇到另一个浮动元素的边框的时候</li>
+<li>当一行内容放不下时，该元素会参考上一个元素的高另起一行；</li>
+</ul>
+</li>
+<li><p>如何清除浮动——————-高度塌陷问题；</p>
+</li>
+<li><ul>
+<li>给父级设置高度，hight=300px缺点:拓展性太差；</li>
+<li>给父级设置浮动—float=left缺点：拓展性太差，本末倒置；</li>
+<li>给父级overflow:hidden缺点：超出部分会被隐藏，兼容性差；</li>
+<li>给父级display:inline-block缺点再次引发其他问题；</li>
+<li>使用clear清除浮动clear—left—right—both—none—–缺点每一次都要确认清除的元素位置（找后一个）</li>
+<li>使用:after伪类内部使用需要注意：1content“”；2clear：both3display:block;</li>
+</ul>
+</li>
+<li><p>Float:———-clear—None,left，right——–none,left,right,both;</p>
+</li>
+<li><p>封装：</p>
+</li>
+<li><ul>
+<li>.clearFIX:after{content:””;clear:both;display:block;}//清除浮动</li>
+<li>.clearFIX{zoom:1;/倍率/}//触发IE6的hasLayout</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h3><ul>
+<li><strong>position：static</strong>：默认，不定位</li>
+</ul>
+<ul>
+<li><p><strong>relative:相对定位</strong>—–top—-left—-right—-bottom</p>
+</li>
+<li><ul>
+<li><p>​</p>
+</li>
+<li><p><strong>特性：</strong></p>
+</li>
+<li><ul>
+<li>对定位数值可以设为负数</li>
+<li>设置偏移量为正值，则向相反方向移动；</li>
+<li>同时设置top&amp;&amp;&amp;bottom—–bottom生效—-left&amp;&amp;right—–right生效</li>
+<li>相对定位的位移参考自身原始位置移动；</li>
+<li>相对定位不会使元素脱离文档流（布局是还是需要考虑）</li>
+<li>相对定位偏移的时候，属性会保留在初始位置，内容会进行偏移；</li>
+<li>如果只设置相对定位，而不进行偏移的话，对当前元素本身没有任何影响</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>absolute:绝对定位</strong>-top—-left—-right—-bottom—-z-index;</p>
+</li>
+<li><ul>
+<li><p>​</p>
+</li>
+<li><p><strong>特性:</strong></p>
+</li>
+<li><ul>
+<li>绝对定位会使元素脱离文档流；</li>
+<li>提升层级一级；会同时压住属性和内容；</li>
+<li>会使不支持宽高的元素从新支持宽高；</li>
+<li>没有设置宽度的元素，会由内容撑开宽度；</li>
+<li>我的绝对定位的位移实际上是参考与离它最近的设置了定位的父级；；（static无效）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>z-index:专门用于控制层级的属性；——–可以设置为负数—但是假如设为负数，无法响应任何点击事件；</li>
+</ul>
+<ul>
+<li><p><strong>fixed：固定定位</strong>；top—-left—-right—-bottom—-z-index;</p>
+</li>
+<li><ul>
+<li><p>​</p>
+</li>
+<li><p><strong>特征:</strong></p>
+</li>
+<li><ul>
+<li>绝对定位的特性基本一致，<strong>区别：</strong>位移始终参考与浏览器界面的位置；</li>
+</ul>
+</li>
+<li><p>固定位置：position:fixed;top:0;left:0;</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>透明度：</strong></p>
+</li>
+<li><ul>
+<li>opacity—–透明度为：0-1—–描述上是不可继承的，实际测试是可继承的。</li>
+<li>替代透明度的方法，可以通过设置rgba()来进行更替；</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>阐述：</strong></p>
+</li>
+<li><ul>
+<li><p>position：relative和position:absolute都可以改变元素在文档流中的位置，</p>
+</li>
+<li><ul>
+<li>同时也会激活top、right，bottom、left。 在未激活之前是可以设置的，但是界面无效果的，</li>
+<li>z-index未设置之 前，默认是auto网页看起来是二维的结构，但是实际上是存在一个Z轴的，Z轴的大小由z-index来决定。默认情况下，所有的元素都是处于z-index=0这一层的。内部元素去根据元素类 型（block、inline…）长宽，内边距外边距等内容来去排列在z-index=0这一层,但是绝对定位，能够使元素完全脱离文档流，不会在z-index=0这一层保留位置，但是相对定位不会使元素 脱离文档流，布局的时候依旧需要考虑。浮动不会让元素“上浮”到另一层，它实际上还是处于z-index=0这一层，但是它会改变正常的文档流的布局z-index=0这一层，也就是我们俗称的 文档流</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>定位的兼容性问题：</strong></p>
+</li>
+<li><ul>
+<li><p>固定定位在IE6中是不生效的</p>
+</li>
+<li><ul>
+<li>Position:relative;在IE6,7下，父级的overflow包不住子级的relative——处理方法，父级添加relative;</li>
+<li>Position:absolute;在IE6下，定位元素的宽和高都是为奇数，在IE6下，定位元素的right和bottom会有1px的偏差；—–无法解决，</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>在img外部添加一个div限制———–可以避免很多问题！</li>
+<li>​</li>
+<li>opacity透明度和transition动画一起连用 ；</li>
+</ul>
+<hr>
+<h3 id="ICE优先级计算原则-ID-class-element"><a href="#ICE优先级计算原则-ID-class-element" class="headerlink" title="ICE优先级计算原则   ID class element"></a>ICE优先级计算原则   ID class element</h3><ul>
+<li><p>继承权重0.001通配符</p>
+</li>
+<li><ul>
+<li>权重  0.1</li>
+</ul>
+</li>
+<li><p>标签选择器   </p>
+</li>
+<li><ul>
+<li>权重1</li>
+</ul>
+</li>
+<li><p>类选择器      </p>
+</li>
+<li><ul>
+<li>权重10   </li>
+</ul>
+</li>
+<li><p>ID选择器      </p>
+</li>
+<li><ul>
+<li>权重100 </li>
+</ul>
+</li>
+<li><p>内联样式表   </p>
+</li>
+<li><ul>
+<li>权重1000</li>
+</ul>
+</li>
+<li><p>群组选择器与权重没关系</p>
+</li>
+<li><ul>
+<li>​</li>
+</ul>
+</li>
+<li><p>后代选择器权重相加（子代选择器）</p>
+</li>
+<li><ul>
+<li>​</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>注意：</strong>同级选择器的权重现价存在极限，不能越过更高级别的权重。</li>
+</ul>
+<hr>
+<h3 id="居中问题"><a href="#居中问题" class="headerlink" title="居中问题"></a>居中问题</h3><ul>
+<li><p><strong>关于页面中一直存在导航居中问题：</strong></p>
+</li>
+<li><ul>
+<li>margin:50%auto;</li>
+<li>position:absolute;top:50%;left:50%margin-top——自身高度的一半；margin-left——自身宽度的一半;</li>
+<li>margin:auto;position:absolute;top:0;left:0;right:0;bottom:0;————推荐使用第三种</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>行高问题—-如何让多行文字居中</strong></p>
+</li>
+<li><ul>
+<li>父级display:table;</li>
+<li>子级：display:table-cell              vertical-align:middle;,</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>水平居中</strong></p>
+</li>
+<li><ul>
+<li>text-align:center</li>
+<li>margin-left:auto;margin-right:auto;</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>垂直居中；</strong></p>
+</li>
+<li><ul>
+<li>通过上下内边距相同实现</li>
+<li>line-height:100px—–height:100px</li>
+</ul>
+</li>
+<li><p><strong>让一个元素消失</strong></p>
+</li>
+<li><ul>
+<li>display:none;</li>
+<li>opacity:0</li>
+<li>height:0;</li>
+<li>vishbility:hidden;</li>
+<li>position:absolute; top:-9999px</li>
+<li>position:absolute; zindex:-9999px</li>
+<li>margin-left:-9999px</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="文字图片"><a href="#文字图片" class="headerlink" title="文字图片"></a>文字图片</h3><ul>
+<li>可以使用字体来代替图片</li>
+<li>1.网站下载一个矢量量图 <a href="http://www.iconfont.cn/collections/show/748?spm=a313x.7781069.0.0.4UFSmm#" target="_blank" rel="external">http://www.iconfont.cn/collections/show/748?spm=a313x.7781069.0.0.4UFSmm#</a></li>
+<li>2.将内部字体文件放入当前文件夹下</li>
+<li>3.将 CSS 文件中的内容复制当前文件的样式表中</li>
+<li>4.删除无关部分</li>
+<li>5.设置类的名称，需要和上面的名称相同</li>
+</ul>
+<p><strong>外边框</strong></p>
+<ul>
+<li>outline 最常使用的情况是绘制在元素周围，为了突出元素的一 条线</li>
+<li>常用于清除 input 的默认样式</li>
+</ul>
+<p><strong>设置元素是否可拉伸 resize</strong></p>
+<ul>
+<li><p>属性 ：</p>
+</li>
+<li><ul>
+<li>vertical  竖直拉伸</li>
+<li>horizontal 横向拉伸</li>
+<li>both  竖直和水平都可以进行拉伸</li>
+<li>none  不允许进行拉伸</li>
+</ul>
+</li>
+<li><p>注意</p>
+</li>
+<li><ul>
+<li>当你的内容需要拉伸的时候，需要配 合 overFlow：hidden； 当这个内容两边的 margin 为 auto 的时候，它的拉伸会同时向两边一起 拉伸</li>
+<li>firefox 4.0 + &amp; chrome &amp; safari 中才会生效</li>
+</ul>
+</li>
+</ul>
+<p><strong>无限的优先级</strong>     在样式后面添加!importment</p>
+<p><strong>怪异盒模型</strong></p>
+<ul>
+<li><p>用于设置 普通盒模型 和 怪异盒模型 的属性</p>
+</li>
+<li><p>box-sizing 属性</p>
+</li>
+<li><ul>
+<li>content-box 正常的盒模型 width 指的是内容的宽度</li>
+<li>border-box  怪异盒模型 width 指的是 border + padding + width</li>
+</ul>
+</li>
+</ul>
+<p><strong>雪碧图应用原理：</strong></p>
+<ul>
+<li>将我们的默认状态图片和滑动状态图片合并成一张图片,background-image，在滑动的时候利用background-position去更改定位位置，我们称这种技术 称为图片翻转技术，演化到最后就是我们的 CSS sprite</li>
+</ul>
+<hr>
+<h3 id="命名注意的事项"><a href="#命名注意的事项" class="headerlink" title="命名注意的事项"></a>命名注意的事项</h3><ul>
+<li><p>驼峰命名用于区分不不同的单词</p>
+</li>
+<li><p>划线 表明从属关系</p>
+</li>
+<li><p>Es：</p>
+</li>
+<li><ul>
+<li>a. php .fun_dd</li>
+<li>b. java 驼峰试命名 tabSwhitch</li>
+<li>c. 混合使用 tabSwitch_ddc</li>
+<li>d. 结构化命名 （m1-1-1 / m2-1-1 m2-2-1 / m3-1-2 m3-2-1 m3-3-1）</li>
+</ul>
+</li>
+</ul>
+<p><strong>常见的命名</strong></p>
+<ul>
+<li>页头：header 如：#header{属性:属性值;} 或.header{属性:属性值;},也许你需要了解class与id 区别及用法</li>
+<li>分区：section</li>
+<li>登录条：loginBar</li>
+<li>标志：logo</li>
+<li>侧栏：sideBar</li>
+<li>广告：banner</li>
+<li>导航：nav</li>
+<li>子导航：subNav</li>
+<li>菜单：menu</li>
+<li>子菜单：subMenu</li>
+<li>搜索：search</li>
+<li>滚动：scroll</li>
+<li>页面主体：main</li>
+<li>内容：content</li>
+<li>标签页：tab</li>
+<li>文章列列表：list</li>
+<li>提示信息：msg</li>
+<li>小技巧：tips</li>
+<li>栏目标题：title</li>
+<li>加入：joinus</li>
+<li>指南：guild</li>
+<li>服务：service</li>
+<li>热点：hot</li>
+<li>新闻：news</li>
+<li>下载：download</li>
+<li>注册：regsiter</li>
+<li>状态：status</li>
+<li>按钮：btn</li>
+<li>投票：vote</li>
+<li>合作伙伴：partner</li>
+<li>友情链接：friendLink</li>
+<li>页脚：footer</li>
+<li>版权：copyRight</li>
+<li>外　套：wrap</li>
+<li>版 权：copyRight</li>
+<li>商　标：label</li>
+<li>标　题：title</li>
+<li>顶导航：topnav</li>
+<li>边导航：sidebar</li>
+<li>左导航：leftsideBar</li>
+<li>菜单内容1： menu1Content</li>
+<li>右导航：rightsideBar</li>
+<li>菜单容量量：　menuContainer</li>
+<li>标　语：banner</li>
+<li>子菜单：submenu</li>
+<li>边导航图标：sidebarIcon</li>
+<li>注释：note</li>
+<li>面包屑：breadCrumb(即页面所处位置导航提示)</li>
+<li>容器：container</li>
+<li>功能区：shop(如购物⻋车，收银台)</li>
+<li>当前：current</li>
+</ul>
+<hr>
+<p><strong>页面结构命名</strong></p>
+<ul>
+<li>容器： container</li>
+<li>页头： header</li>
+<li>内容： content / container</li>
+<li>页面主题： main</li>
+<li>页尾： footer</li>
+<li>导航： nav（navigation的缩写）</li>
+<li>侧栏： sidebar</li>
+<li>栏目： column</li>
+<li>页面外围控制整体布局宽度： wrapper</li>
+<li>左右中： left / right / center</li>
+<li>导航： nav</li>
+</ul>
+<p><strong>导航 命名</strong></p>
+<ul>
+<li>导航： nav</li>
+<li>子导航： subnav</li>
+<li>顶导航： topnav</li>
+<li>边导航： sidebar</li>
+<li>左导航： leftsidebar</li>
+<li>右导航： rightsidebar</li>
+<li>菜单： menu</li>
+<li>子菜单： submenu</li>
+<li>标题： title</li>
+<li>摘要： summary</li>
+</ul>
+<hr>
+<p><strong>功能 命名</strong></p>
+<ul>
+<li>标志： logo</li>
+<li>广告： banner</li>
+<li>登录： login</li>
+<li>登录条： loginbar</li>
+<li>注册： register</li>
+<li>搜索： search</li>
+<li>功能区： shop</li>
+<li>标题： title</li>
+<li>加入： joinus</li>
+<li>状态： status</li>
+<li>按钮： btn</li>
+<li>滚动： scrol l</li>
+<li>标签页： tab</li>
+<li>文章列列表： list</li>
+<li>提示信息： msg（message的缩写）</li>
+<li>当前的： current</li>
+<li>小技巧： tips</li>
+<li>图标： icon</li>
+<li>注释： note</li>
+<li>指南： guild</li>
+<li>服务： service</li>
+<li>热点： hot</li>
+<li>新闻： news</li>
+<li>下载： download</li>
+<li>投票： vote</li>
+<li>合作伙伴： partner</li>
+<li>友情链接： link</li>
+<li>版权： copyright</li>
+</ul>
+<p><strong>CSS样式表以及文件命名</strong></p>
+<ul>
+<li>主要的： master.css</li>
+<li>模块： module.css</li>
+<li>基本公用： base.css</li>
+<li>布局、版面： layout.css</li>
+<li>主题： themes.css</li>
+<li>专栏： columns.css</li>
+<li>文字： font.css</li>
+<li>表单： forms.css</li>
+<li>补丁： mend.css</li>
+<li>打印： print.css</li>
+</ul>
+<hr>
+<p><strong>CSS书写顺序</strong></p>
+<ul>
+<li>位置属性 position / top / right / z-index / display / float / …</li>
+<li>大小 width / height / padding / margin / …</li>
+<li>文字相关 font / line-height / letter-spacing / color / text-align / …</li>
+<li>背景 background / border / …</li>
+<li>其他 animation / transition / …</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/HTML/" rel="tag"># HTML</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://omlbexgty.bkt.clouddn.com/1-l9rwwtUMoiRJOb7uGEkhFg.jpeg"
+               alt="Wang Jun" />
+          <p class="site-author-name" itemprop="name">Wang Jun</p>
+           
+              <p class="site-description motion-element" itemprop="description">知识管理，时间管理，自我管理，阅读，语音写作，思维导图，Wiz，TimeMeter</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/black-Saber" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML学习笔记"><span class="nav-number">1.</span> <span class="nav-text">HTML学习笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML"><span class="nav-number">1.1.</span> <span class="nav-text">HTML</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#HTML头部内容"><span class="nav-number">1.1.1.</span> <span class="nav-text">HTML头部内容</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS引入方式"><span class="nav-number">1.2.</span> <span class="nav-text">CSS引入方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS选择器"><span class="nav-number">1.3.</span> <span class="nav-text">CSS选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#盒子模型"><span class="nav-number">1.4.</span> <span class="nav-text">盒子模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML标签"><span class="nav-number">1.5.</span> <span class="nav-text">HTML标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#table表格属性"><span class="nav-number">1.6.</span> <span class="nav-text">table表格属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#form表单属性"><span class="nav-number">1.7.</span> <span class="nav-text">form表单属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS样式-属性"><span class="nav-number">1.8.</span> <span class="nav-text">CSS样式 属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#浮动"><span class="nav-number">1.9.</span> <span class="nav-text">浮动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定位"><span class="nav-number">1.10.</span> <span class="nav-text">定位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ICE优先级计算原则-ID-class-element"><span class="nav-number">1.11.</span> <span class="nav-text">ICE优先级计算原则   ID class element</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#居中问题"><span class="nav-number">1.12.</span> <span class="nav-text">居中问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文字图片"><span class="nav-number">1.13.</span> <span class="nav-text">文字图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#命名注意的事项"><span class="nav-number">1.14.</span> <span class="nav-text">命名注意的事项</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Wang Jun</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
