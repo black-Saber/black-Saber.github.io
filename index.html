@@ -405,13 +405,14 @@
         
           
           git免密部署
-ssh-keygen -t rsa
-C:\Users\admin\.ssh
+新建一个新的SSH KEY
+
+ssh-keygen -t rsa -b 4096 -C &quot;uestchan@sina.com&quot;
+然后按下三次回车生成本地的SSH KEY
+默认的生成地址是：C:\Users\uestc.ssh
 
 
-然后 复制 id_rsa  里面的内容到 github 的 ssh 上面
-
-搭建 hexo，在执行 hexo deploy 后,出现 error deployer not found:github 的错误
+将id_rsa.pub公钥中的内容
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -745,7 +746,7 @@ HTML 使用
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共8.4k字</span>
+  <span class="post-count">博客全站共8.5k字</span>
 </div>
 
 

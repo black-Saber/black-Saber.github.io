@@ -90,18 +90,18 @@
 
 
 
-<meta name="description" content="git免密部署 ssh-keygen -t rsa C:\Users\admin\.ssh   然后 复制 id_rsa  里面的内容到 github 的 ssh 上面  搭建 hexo，在执行 hexo deploy 后,出现 error deployer not found:github 的错误hexo 更新到3.0之后，deploy的type 的github需要改成git npm insta">
+<meta name="description" content="git免密部署 新建一个新的SSH KEY  ssh-keygen -t rsa -b 4096 -C &amp;quot;uestchan@sina.com&amp;quot; 然后按下三次回车生成本地的SSH KEY 默认的生成地址是：C:\Users\uestc.ssh   将id_rsa.pub公钥中的内容添加到Git仓库设置中  进入目录C:\Users\uestc.ssh，打开id_rsa.pub文件">
 <meta name="keywords" content="GIT">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git免密部署">
 <meta property="og:url" content="http://yoursite.com/2019/07/21/GIT免密部署/index.html">
 <meta property="og:site_name" content="前端的一股清流">
-<meta property="og:description" content="git免密部署 ssh-keygen -t rsa C:\Users\admin\.ssh   然后 复制 id_rsa  里面的内容到 github 的 ssh 上面  搭建 hexo，在执行 hexo deploy 后,出现 error deployer not found:github 的错误hexo 更新到3.0之后，deploy的type 的github需要改成git npm insta">
+<meta property="og:description" content="git免密部署 新建一个新的SSH KEY  ssh-keygen -t rsa -b 4096 -C &amp;quot;uestchan@sina.com&amp;quot; 然后按下三次回车生成本地的SSH KEY 默认的生成地址是：C:\Users\uestc.ssh   将id_rsa.pub公钥中的内容添加到Git仓库设置中  进入目录C:\Users\uestc.ssh，打开id_rsa.pub文件">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-21T03:34:22.601Z">
+<meta property="og:updated_time" content="2019-07-21T03:41:24.204Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git免密部署">
-<meta name="twitter:description" content="git免密部署 ssh-keygen -t rsa C:\Users\admin\.ssh   然后 复制 id_rsa  里面的内容到 github 的 ssh 上面  搭建 hexo，在执行 hexo deploy 后,出现 error deployer not found:github 的错误hexo 更新到3.0之后，deploy的type 的github需要改成git npm insta">
+<meta name="twitter:description" content="git免密部署 新建一个新的SSH KEY  ssh-keygen -t rsa -b 4096 -C &amp;quot;uestchan@sina.com&amp;quot; 然后按下三次回车生成本地的SSH KEY 默认的生成地址是：C:\Users\uestc.ssh   将id_rsa.pub公钥中的内容添加到Git仓库设置中  进入目录C:\Users\uestc.ssh，打开id_rsa.pub文件">
 
 
 
@@ -400,11 +400,40 @@
 
       
         <h3 id="git免密部署"><a href="#git免密部署" class="headerlink" title="git免密部署"></a>git免密部署</h3><ol>
-<li><code>ssh-keygen -t rsa</code><ol>
-<li><code>C:\Users\admin\.ssh</code></li>
+<li><p><strong>新建一个新的SSH KEY</strong></p>
+<ol>
+<li><code>ssh-keygen -t rsa -b 4096 -C &quot;uestchan@sina.com&quot;</code></li>
+<li>然后按下三次回车生成本地的SSH KEY</li>
+<li>默认的生成地址是：C:\Users\uestc.ssh</li>
 </ol>
 </li>
-<li>然后 复制 id_rsa  里面的内容到 github 的 ssh 上面</li>
+<li><p><strong>将id_rsa.pub公钥中的内容添加到Git仓库设置中</strong></p>
+<ol>
+<li>进入目录C:\Users\uestc.ssh，打开id_rsa.pub文件，并复制其中的所有内容  </li>
+</ol>
+</li>
+<li><p><strong>登录GitHub </strong></p>
+<ol>
+<li><p>-点击右上角的头像 ，然后点击settings</p>
+<p>​      -选择SSH and GPG keys </p>
+<p>​      -New SSH key </p>
+</li>
+<li><p>将复制的公钥密文，粘贴到相应的位置（title根据自己喜爱取），然后点击Add SSH key保存</p>
+</li>
+</ol>
+</li>
+<li><p><strong>验证是否成功</strong></p>
+<ol>
+<li><p>ssh -T git@github.com</p>
+</li>
+<li><p>然后输入 yes</p>
+</li>
+<li><p>如果提示：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Hi username! You<span class="string">'ve successfully authenticated, but GitHub does not</span></span><br><span class="line"><span class="string">provide shell access.</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>说明配置成功</p>
+</li>
 </ol>
 <h3 id="搭建-hexo，在执行-hexo-deploy-后-出现-error-deployer-not-found-github-的错误"><a href="#搭建-hexo，在执行-hexo-deploy-后-出现-error-deployer-not-found-github-的错误" class="headerlink" title="搭建 hexo，在执行 hexo deploy 后,出现 error deployer not found:github 的错误"></a>搭建 hexo，在执行 hexo deploy 后,出现 error deployer not found:github 的错误</h3><p>hexo 更新到3.0之后，deploy的type 的github需要改成git</p>
 <p>npm install hexo-deployer-git –save 改了之后执行，然后再部署</p>
@@ -640,7 +669,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共8.4k字</span>
+  <span class="post-count">博客全站共8.5k字</span>
 </div>
 
 
