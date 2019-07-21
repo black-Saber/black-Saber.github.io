@@ -12,6 +12,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[30 Seconds of CSS 中文版]]></title>
+    <url>%2F2019%2F07%2F17%2FCSS%2F30%20Seconds%20of%20CSS%20%E4%B8%AD%E6%96%87%E7%89%88%2F</url>
+    <content type="text"><![CDATA[30 Seconds of CSS 中文版 您可以在30秒或更短的时间内了解的有用的CSS代码片段。 灵感来自 30 seconds of code. 在线查阅 http://caibaojian.com/30-seconds-of-css/ 感谢英文版 30 Seconds of CSS]]></content>
+      <categories>
+        <category>CSS相关</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[NodeJs安装与全局配置]]></title>
     <url>%2F2018%2F07%2F21%2FNodeJs%E5%AE%89%E8%A3%85%E4%B8%8E%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE%2F</url>
     <content type="text"><![CDATA[NodeJs安装与全局配置 首先我们要到nodejs官网（https://nodejs.org）上下载node 下载完了就直接双击安装，安装过程中可以另外指定安装路径：D:\softword\node 安装完成之后进入cmd命令行，然后输入 node -v 测试是否安装成功，出现版本号就表示安装成功 npm的安装，由于新版的nodejs已经集成了npm，所以之前安装node的时候npm也连带装好了。在命令行中输入 npm -v 来测试是否已经成功安装npm，出现版本号就表示成功安装了。 下面我们来进行npm全局模块的存放路径以及cache的路径的配置，这些路径默认是在 C 盘的。控制台输入： npm config ls 进入cmd命令行，输入一下的命令设置全局模块的安装路径到node_gobal文件夹，缓存到node_cache文件夹： 新建连个文件夹 node_gobal：node_cache npm config set prefix “E:\FRONT\nodejs\node_gobal” npm config set cache “E:\FRONT\nodejs\node_cache” 由于node全局模块大多数都是可以通过命令行访问的，所以还要把“E:\FRONT\nodejs\node_gobal”加入到系统PATH中，方便直接使用命令行运行。 在“系统变量”中新建，新建一个名为NODE_PATH的变量，变量值为：E:\FRONT\nodejs\node_gobal\node_modules(之前新建的用于存放全局模块的文件夹中的node_modules文件夹的绝对路径。（告诉系统 用户下载的全局模块在此处）)。 安装淘宝npm（cnpm） npm install -g cnpm --registry=https:``//registry.npm.taobao.org npm config set registry https://registry.npm.taobao.org]]></content>
